@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratando tabelas</title>
+    <style>
+        table {
+            width: 300px;
+            border-collapse: collapse;
+            
+        }
+        td{
+            border:1px solid black;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>1</td>
+            <TD>2</TD>
+            <TD rowspan="2">3</TD>
+            <td>4</td>
+        </tr>
+        <tr>
+            <TD>5</TD>
+            <TD>6</TD>
+            <td>7</td>
+            
+
+        </tr>
+        <tr>
+            <TD colspan="3">8</TD>
+            <td>9</td>
+            
+        </tr>
+        <tr>
+            <TD rowspan="2">10</TD>
+            <TD colspan="2">11</TD>
+            <td>12</td>
+            
+        </tr>
+        <tr>
+            <td>13</td>
+            <TD>14</TD>
+            <TD>15</TD>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>Grupos</td>
+            <td>Nomes</td>
+            <td>Filmes</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Grande</title>
+    <style>
+        budy{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: rgb(230, 233, 233);
+        }
+        thead{
+            background-color: gray;
+            color: white;
+        }
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        thead > tr > th{
+            position: sticky;
+            background-color: gray;
+            top: 0;
+        }
+        caption {
+            background-color: rgb(181, 178, 178);
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        th{
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+            right: px;
+        }
+        td{
+            border: 1px solid black;
+            text-align: center;
+        }
+        tfoot{background-color: gray;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+   <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>Populações das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col"> Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Pauo</td>
+                <td class="num">21 521 547</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">25 128 744</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">4 741 358</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="num">1 588 541</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">988 541</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td class="num">988 541</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">2 488 541</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">248 541</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">1 192 541</td>
+            </tr>
+            <tr>
+                <td>Maceio</td>
+                <td class="num">748 541</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">988 541</td>
+            </tr>
+            <tr>
+                <td>Rondonia</td>
+                <td class="num">988 541</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de habitantes</th>
+            <td class="num">025048</td>
+        </tfoot>
+    </table>
+</body>
+</html>
