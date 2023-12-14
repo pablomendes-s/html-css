@@ -1,0 +1,93 @@
+@charset "UTF-8";
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body, html{
+    background-image: linear-gradient(to top, rgb(4, 28, 135), rgb(246, 155, 238));
+    width: 100vh;
+    height: 100vh;
+}
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+   
+}
+section#login{
+    display: block;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    width: 250px;
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.58);
+
+    transition: width .3s height .3s;
+    transition-timing-function: ease;
+}
+section#login > div#imagem{
+    display: block;
+    background-image: url(imagens/predio.jpg);
+    background-size: cover;
+    height: 150px;
+}
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
+    
+}
+div#formulario >h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+div#formulario > p{
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}
+form > input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 35px;
+    margin-top: 5px;
+    background-color: rgb(4, 28, 135);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form > input[type=submit]:hover{
+    background-color: rgb(112, 86, 230);
+}
+form > a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 35px;
+    margin-top: 5px;
+    color: rgb(4, 28, 135);
+    border: 1px solid rgb(4, 28, 135);
+    border-radius: 5px;
+}
+form > a.botao:hover{
+    background-color: rgb(186, 117, 250);
+}
+form > a.botao > span{
+    font-size: 0.8 em;
+}
+footer {
+    text-align: center;
+    background-color: rgb(29, 17, 118);
+    color: rgb(246, 155, 238);
+    height: 20px;
+    width: 100vw;
+}
